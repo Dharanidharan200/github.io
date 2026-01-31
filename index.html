@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dharanidharan | Software Developer Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 70px 20px 40px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #cfd8dc;
+            margin-bottom: 20px;
+        }
+
+        /* Social icons */
+        .social-icons a {
+            color: white;
+            font-size: 32px;
+            margin: 0 12px;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #00e5ff;
+            transform: scale(1.2);
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: rgba(255,255,255,0.08);
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #00e5ff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 220px;
+            background: rgba(0,0,0,0.4);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Highlight current project */
+        .current-project {
+            border: 2px solid #00e5ff;
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+        }
+
+        .badge {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            background: #00e5ff;
+            color: #000;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #b0bec5;
+        }
+
+       /* FLOATING BUTTONS */
+.floating-buttons {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+}
+
+/* Round resume button */
+.resume-btn-round {
+    width: 55px;
+    height: 55px;
+    background: #00e5ff;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0,229,255,0.8);
+    transition: transform 0.3s;
+}
+
+.resume-btn-round:hover {
+    transform: scale(1.1);
+}
+
+/* Phone round button */
+.phone-btn {
+    width: 55px;
+    height: 55px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.8);
+    transition: transform 0.3s;
+}
+
+.phone-btn:hover {
+    transform: scale(1.1);
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Dharanidharan</h1>
+    <p>
+        Software Developer with 3+ years experience |
+        ERP & Web Application Specialist
+    </p>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/dharanidharan-h-tech/" target="_blank">
+            <i class="fa fa-linkedin-square"></i>
+        </a>
+        <a href="https://github.com/Dharanidharan200" target="_blank">
+            <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/dharanidharan_h_official/" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+    </div>
+</header>
+
+<section>
+    <h2>Professional Summary</h2>
+    <p>
+        Software Developer with 3+ years of hands-on experience in
+        building ERP systems, web applications, and REST APIs.
+        Strong experience in Node.js, PostgreSQL, and end-to-end
+        application development.
+    </p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Passionate software engineer currently working on a live ERP
+        system. Experienced in solving real-world business problems
+        and delivering scalable solutions.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="cards">
+        <div class="card">Node.js</div>
+        <div class="card">PostgreSQL</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">React</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+
+        <div class="card current-project">
+            <span class="badge">CURRENT ROLE</span>
+            <h3>Enterprise ERP System</h3>
+            <p>Live ERP application used by internal teams.</p>
+            <ul>
+                <li>CRM, HRM, Stores & Tender modules</li>
+                <li>Node.js & Express backend</li>
+                <li>PostgreSQL database</li>
+                <li>Feature development & enhancements</li>
+            </ul>
+            <p><strong>Status:</strong> Actively working</p>
+        </div>
+
+        <div class="card">
+            <h3>E-commerce Application</h3>
+            <p>
+                Online shopping platform with cart, order management
+                and real-time chat using WebSocket.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Website Development</h3>
+            <p>
+                Business websites with forms and admin features.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> dharanidharanh.official@gmail.com</p>
+    <p><strong>Mobile:</strong> +91 88383 22828</p>
+    <p><strong>Location:</strong> Chennai, India</p>
+</section>
+
+<footer>
+    <p>© 2026 Dharanidharan</p>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<!-- FLOATING ICON BUTTONS -->
+<div class="floating-buttons">
+
+    <!-- Resume View Icon -->
+    <a href="Dharanidharan_H_Resume-1.pdf"
+       target="_blank"
+       class="resume-btn-round"
+       title="View Resume">
+        <i class="fa fa-file-pdf-o"></i>
+    </a>
+
+    <!-- Phone Copy Icon -->
+    <div class="phone-btn"
+         onclick="navigator.clipboard.writeText('+918838322828')"
+         title="Copy Mobile Number">
+        <i class="fa fa-phone"></i>
+    </div>
+
+</div>
+
+
+</body>
+</html>
